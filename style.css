@@ -1,25 +1,17 @@
 /* GERAL */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-html {
+body{
     height: 100vh;
 }
 
-body {
-    background-color: #fff;
-}
-
-/* HEADER */
-header .container {
+header{
     position: relative;
-    max-height: 100vh;
-    max-width: 320px;
-    background-color: #001011;
-    overflow: hidden;
-    overflow-y: scroll;
+    height: 100%;
+    width: 320px;
+    background-color: aqua;
 }
