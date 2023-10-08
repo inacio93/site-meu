@@ -219,6 +219,8 @@ svg {
     font-weight: 500;
     color: #f1f1f2;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .bar-progress .barras {
@@ -232,6 +234,13 @@ svg {
     height: 3px;
     background-color: #dc4741;
     position: absolute;
+}
+
+#percent{
+    max-width: 100%;
+    text-align: right;
+    font-size: .7rem;
+    color: #76767a;
 }
 
 .html {
