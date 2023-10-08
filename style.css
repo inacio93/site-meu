@@ -108,8 +108,94 @@ header::-webkit-scrollbar {
 
 /* CIRCULAR PROGRESS */
 .circular-progress {
-    width: 100%;
-    height: 300px;
+    max-width: 100%;
+    height: 100px;
+    margin: 0 30px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #404048;
+}
+
+svg {
+    width: 100px;
+    height: 100px;
+    rotate: -90deg;
+}
+
+.en-bar {
+    fill: transparent;
+    stroke: #14141b;
+    stroke-width: 4px;
+}
+
+.en-progress {
+    fill: transparent;
+    stroke: #dc4741;
+    stroke-width: 4px;
+    stroke-dasharray: 188.5;
+    stroke-dashoffset: 188;
+    stroke-linecap: butt;
+    animation: en-progress 2s linear forwards;
+}
+
+.pt-bar {
+    fill: transparent;
+    stroke: #14141b;
+    stroke-width: 4px;
+}
+
+.pt-progress {
+    fill: transparent;
+    stroke: #dc4741;
+    stroke-width: 4px;
+    stroke-dasharray: 188.5;
+    stroke-dashoffset: 188;
+    stroke-linecap: butt;
+    animation: pt-progress 2s linear forwards;
+}
+
+#num-en {
+    transform: rotate(90deg);
+    translate: 94px -5px;
+    fill: #f1f1f2;
+    font-weight: 600;
+}
+
+#num-pt {
+    transform: rotate(90deg);
+    translate: 94px -10px;
+    fill: #f1f1f2;
+    font-weight: 600;
+}
+
+#lan-en {
+    transform: rotate(90deg);
+    translate: 10px 30px;
+    font-size: .8rem;
+    fill: #f1f1f2;
+    font-weight: 500;
+}
+
+#lan-pt {
+    transform: rotate(90deg);
+    translate: 10px 20px;
+    font-size: .8rem;
+    fill: #f1f1f2;
+    font-weight: 500;
+}
+
+@keyframes en-progress {
+    100% {
+        stroke-dashoffset: 75.4;
+    }
+}
+
+@keyframes pt-progress {
+    100% {
+        stroke-dashoffset: 0;
+    }
 }
 
 /* BAR PROGRESS */
@@ -137,7 +223,7 @@ header::-webkit-scrollbar {
 
 .bar-progress .barras {
     position: relative;
-    background-color: #76767a;
+    background-color: #14141b;
     display: block;
     height: 3px;
 }
