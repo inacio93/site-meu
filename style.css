@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    background-color: #191923;
+
 
 }
 
@@ -12,6 +12,7 @@ body {
     height: 100vh;
     padding: 20px;
     display: flex;
+    background-color: #191923;
 }
 
 /* HEADER */
@@ -419,7 +420,7 @@ main::-webkit-scrollbar {
     padding: 30px;
     box-shadow: 0 0 8px #0000005e;
     position: relative;
-    background-image: linear-gradient(to top, #19192379 0%, #19192379), url(images/fundo.jpg);
+    background-image: linear-gradient(#19192379 0%, #19192379), url(images/fundo.jpg);
     background-size: cover;
 }
 
@@ -531,4 +532,137 @@ main::-webkit-scrollbar {
     background-color: #dc4741;
     border: 0;
     font-weight: 600;
+}
+
+/* MEUS SERVIÇOS */
+.services {
+    max-width: 100%;
+    height: max-content;
+    position: relative;
+    margin: 0 60px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.titulo h1 {
+    max-width: 100%;
+    position: relative;
+    height: max-content;
+    margin: 0 60px;
+    margin-top: 60px;
+    color: #f1f1f2;
+    font-size: 1.2rem;
+    background: none;
+}
+
+.box1,
+.box2,
+.box3 {
+    padding: 30px;
+    width: 300px;
+    display: block;
+    text-align: left;
+    height: 230px;
+    background-color: #2b2b36;
+    justify-content: space-between;
+    margin: 0 10px;
+    transition: .4s ease-in-out;
+}
+
+.services .box1:hover,
+.services .box2:hover,
+.services .box3:hover {
+    transform: scale(1.05);
+    transition: .1s ease;
+}
+
+.services h4 {
+    margin-bottom: 20px;
+    color: #f1f1f2;
+}
+
+.services p {
+    color: #88888a;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.services a {
+    text-decoration: none;
+    color: #dc4741;
+    font-weight: 700;
+    transition: .2s;
+}
+
+.services a:hover {
+    color: #fa605b;
+    transform: scale(1.05);
+    text-shadow: 0px 0px 10px #fa605b;
+}
+
+/* HOBBIES */
+.hobbies{
+    position: relative;
+    margin: 0 60px;
+    margin-top: 30px;
+    max-width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+.violao{
+    width: 250px;
+    height: 350px;
+    position: relative;
+    background-image: url(images/violao.jpg);
+    background-position: 100% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.artes{
+    width: 250px;
+    height: 350px;
+    position: relative;
+    background-image: url(images/lobo.png);
+    background-position: 100% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.games{
+    width: 250px;
+    height: 350px;
+    position: relative;
+    background-image: url(images/games.jpg);
+    background-position: 100% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.violao:hover, .artes:hover, .games:hover{
+    background-position: 100% 100%;
+    transition: 5s;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #14141b86;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #f1f1f2;
+}
+
+.overlay:hover{
+    opacity: 1; 
 }
