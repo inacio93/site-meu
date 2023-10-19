@@ -1,6 +1,7 @@
 //Seleção dos botoes do menu lateral
 var menuItem = document.querySelectorAll('.item-menu')
 
+// Função para deixar a cor no botao ao ser clicado
 function selectLink() {
     menuItem.forEach((item) =>
         item.classList.remove('ativo')

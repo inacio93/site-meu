@@ -1,5 +1,6 @@
 /* GERAL */
 * {
+    /*Reset e padronização da pagina*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,6 +10,7 @@
 
 
 body {
+    /*Definindo configurações do body*/
     height: 100vh;
     padding: 20px;
     display: flex;
@@ -40,7 +42,7 @@ header::-webkit-scrollbar {
     height: 260px;
 }
 
-
+/* configurações do perfil */
 .perfil {
     top: 0;
     left: 0;
@@ -84,6 +86,7 @@ header::-webkit-scrollbar {
     transition: .5s ease-in-out;
 }
 
+/* configurações dos dados */
 .dados {
     max-width: 100%;
     display: flex;
@@ -111,6 +114,7 @@ header::-webkit-scrollbar {
 }
 
 /* CIRCULAR PROGRESS */
+/* configurações da barra de progresso circular */
 .circular-progress {
     max-width: 100%;
     height: 100px;
@@ -190,6 +194,7 @@ svg {
     font-weight: 500;
 }
 
+/* animaçoes da barra de progresso circular */
 @keyframes en-progress {
     100% {
         stroke-dashoffset: 75.4;
@@ -203,6 +208,7 @@ svg {
 }
 
 /* BAR PROGRESS */
+/* configurações da barra de brogresso linear */
 .bar-progress {
     margin: 0 30px;
     max-width: 100%;
@@ -267,6 +273,7 @@ svg {
     animation: illustrator 3s;
 }
 
+/* animações da barra de progresso linear */
 @keyframes html {
     0% {
         width: 0%;
@@ -333,7 +340,7 @@ svg {
 /* =================================== */
 
 /* DOWNLOAD */
-
+/* estilização do botao de download */
 .download {
     margin: 0 30px;
     display: flex;
@@ -358,7 +365,7 @@ svg {
 }
 
 /* RODAPÉ */
-
+/* estilização do rodapé */
 .rodape {
     bottom: 0;
     position: sticky;
@@ -386,6 +393,7 @@ svg {
 
 /* ///////////////////////////////////////////// */
 /* MAIN */
+/* configurações do conteudo central da página */
 main {
     position: absolute;
     right: 20px;
@@ -410,7 +418,7 @@ main::-webkit-scrollbar {
     width: 0;
 }
 
-
+/* estilização do banner */
 .banner {
     background-color: #14141b;
     max-width: 100%;
@@ -462,6 +470,7 @@ main::-webkit-scrollbar {
     background-image: linear-gradient(to top, #19192379 0%, #19192379), url(images/fundo.jpg);
 }
 
+/* animação do texto animado */
 @keyframes digita {
 
     10%,
@@ -536,6 +545,7 @@ main::-webkit-scrollbar {
 }
 
 /* MEUS SERVIÇOS */
+/* estilização da parte de serviços */
 .services {
     max-width: 100%;
     height: max-content;
@@ -602,6 +612,7 @@ main::-webkit-scrollbar {
 }
 
 /* HOBBIES */
+/* estilização da parte de hobbies */
 .hobbies {
     position: relative;
     margin: 0 60px;
@@ -671,7 +682,7 @@ main::-webkit-scrollbar {
 }
 
 /* MENU LATERAL */
-
+/* estilização do menu de navegação */
 nav.menu-lateral {
     position: fixed;
     right: 0;
