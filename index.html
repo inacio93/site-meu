@@ -26,9 +26,9 @@
             </div>
 
             <div class="perfil">
-                <img src="images/foto.png" alt="" width="100px">
+                <img src="images/foto.png" alt="" width="120px">
                 <h5>Inácio Santos</h5>
-                <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+                <h4>Ilustrador, Web Designer, UX Designer, Gamer</h4>
             </div><!--perfil-->
 
             <div class="dados">
@@ -125,7 +125,7 @@
 
     <main>
 
-        <div class="img"></div>
+        <div class="img" id="link-menu-home"></div>
         <div class="banner">
             <h1>Conheça meu Espaço Artístico!</h1>
 
@@ -139,7 +139,7 @@
         </div>
 
         <div class="titulo">
-            <h1>Meus Serviços</h1>
+            <h1 id="link-menu-services">Meus Serviços</h1>
         </div>
 
         <div class="services">
@@ -166,7 +166,7 @@
         </div>
 
         <div class="titulo">
-            <h1>Hobbies</h1>
+            <h1 id="link-menu-hobbies">Hobbies</h1>
         </div>
 
         <div class="hobbies">
@@ -182,6 +182,41 @@
         </div>
 
     </main>
+
+    <nav class="menu-lateral">
+
+        <div class="btn-expandir">
+            <i class="fa-solid fa-bars" id="btn-exp"></i>
+        </div>
+
+        <ul>
+
+            <li class="item-menu ativo">
+                <a href="#link-menu-home">
+                    <span class="icon"><i class="fa-solid fa-house"></i></span>
+                    <span class="txt-link">Home</span>
+                </a>
+            </li>
+
+            <li class="item-menu">
+                <a href="#link-menu-services">
+                    <span class="icon"><i class="fa-solid fa-code"></i></span>
+                    <span class="txt-link">Serviços</span>
+                </a>
+            </li>
+
+            <li class="item-menu">
+                <a href="#link-menu-hobbies">
+                    <span class="icon"><i class="fa-solid fa-gamepad"></i></span>
+                    <span class="txt-link">Hobbies</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <script src="menu.js"></script>
 </body>
 
 </html>
